@@ -12,5 +12,5 @@ func Gin(collection *mongo.Collection) {
 	r.GET("/users", database.FindUser(collection))
 	r.POST("/create", database.CreateUser(collection))
 
-	r.Run("192.168.1.66:8080")
+	r.Run("localhost:8080")
 }
