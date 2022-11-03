@@ -12,7 +12,7 @@ import (
 	"net/http"
 )
 
-// Connect to database
+// Connect to mongodb database cos SQL is for nerds
 func Connect() (*mongo.Client, *mongo.Collection) {
 	// Set client options
 	clientOptions := options.Client().ApplyURI("mongodb://127.0.0.1:27017")
